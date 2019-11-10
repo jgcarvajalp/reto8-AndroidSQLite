@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Reto8_AndroidSQLite</string>
+    <string name="menu_options">Choose a menu option</string>
+    <string name="add_company">ADD COMPANY</string>
+    <string name="update_company">UPDATE COMPANY</string>
+    <string name="view_company">VIEW ALL COMPANIES</string>
+    <string name="remove_company">REMOVE COMPANY</string>
+</resources>
