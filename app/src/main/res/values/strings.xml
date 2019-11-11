@@ -1,8 +1,17 @@
 <resources>
-    <string name="app_name">Reto8_AndroidSQLite</string>
-    <string name="menu_options">Choose a menu option</string>
-    <string name="add_company">ADD COMPANY</string>
-    <string name="update_company">UPDATE COMPANY</string>
-    <string name="view_company">VIEW ALL COMPANIES</string>
-    <string name="remove_company">REMOVE COMPANY</string>
+    <string name="app_name">Empresas de software</string>
+    <string name="menu_options">Seleccione una opción</string>
+    <string name="add_company">AGREGAR EMPRESA</string>
+    <string name="update_company">ACTUALIZAR EMPRESA</string>
+    <string name="view_company">CONSULTAR EMPRESAS</string>
+    <string name="remove_company">ELIMINAR EMPRESA</string>
+    <string name="enter_company_id">Ingrese el ID de la empresa</string>
+    <string name="company_info">Información de la empresa</string>
+    <string name="company_name">Nombre</string>
+    <string name="company_url">Url</string>
+    <string name="company_phone">Teléfono</string>
+    <string name="company_email">E-mail</string>
+    <string name="company_products">Productos y servicios</string>
+    <string name="company_classification">Clasificación</string>
+    <string name="save_info">Guardar</string>
 </resources>

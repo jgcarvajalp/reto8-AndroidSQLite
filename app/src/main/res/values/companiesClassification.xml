@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="companies_classification_array">
+        <item>Consultoría</item>
+        <item>Desarrollo a la medida</item>
+        <item>Fábrica de software</item>
+    </string-array>
+</resources>
