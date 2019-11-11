@@ -46,7 +46,7 @@ public class AddUpdateEmployee extends AppCompatActivity {
         tilCompanyName = (TextInputEditText)findViewById(R.id.tilCompanyName);
         tilUrl = (TextInputEditText)findViewById(R.id.tilCompanyUrl);
         etPhoneNumber = (EditText) findViewById(R.id.editTextPhoneNumber);
-        etEmail = (EditText) findViewById(R.id.editTextPhoneNumber);
+        etEmail = (EditText) findViewById(R.id.editTextEmail);
         etProductsServices = (EditText) findViewById(R.id.editTextProductsServices);
 
         spinnerCompanyClassification = (Spinner) findViewById(R.id.spinnerCompanyClassification);

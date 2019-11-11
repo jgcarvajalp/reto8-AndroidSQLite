@@ -48,13 +48,13 @@ public class MainActivity extends AppCompatActivity {
         editCompanyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             //   getEmpIdAndUpdateEmp();
+               getEmpIdAndUpdateEmp();
             }
         });
         deleteCompanyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             //   getEmpIdAndRemoveEmp();
+                getEmpIdAndRemoveEmp();
             }
         });
         viewAllCompanyButton.setOnClickListener(new View.OnClickListener() {
@@ -84,16 +84,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
 */
-    /*public void getEmpIdAndUpdateEmp(){
+    public void getEmpIdAndUpdateEmp(){
 
         LayoutInflater li = LayoutInflater.from(this);
-        View getEmpIdView = li.inflate(R.layout.dialog_get_emp_id, null);
+        View getEmpIdView = li.inflate(R.layout.dialog_get_comp_id, null);
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         // set dialog_get_emp_id.xml to alertdialog builder
         alertDialogBuilder.setView(getEmpIdView);
 
-        final EditText userInput = (EditText) getEmpIdView.findViewById(R.id.editTextDialogUserInput);
+        final EditText userInput = (EditText) getEmpIdView.findViewById(R.id.editTextEnterComId);
 
         // set dialog message
         alertDialogBuilder
@@ -104,25 +104,25 @@ public class MainActivity extends AppCompatActivity {
                         // edit text
                         Intent i = new Intent(MainActivity.this,AddUpdateEmployee.class);
                         i.putExtra(EXTRA_ADD_UPDATE, "Update");
-                        i.putExtra(EXTRA_EMP_ID, Long.parseLong(userInput.getText().toString()));
+                        i.putExtra(EXTRA_COMPANY_ID, Long.parseLong(userInput.getText().toString()));
                         startActivity(i);
                     }
                 }).create()
                 .show();
 
-    }*/
+    }
 
 
-   /* public void getEmpIdAndRemoveEmp(){
+    public void getEmpIdAndRemoveEmp(){
 
         LayoutInflater li = LayoutInflater.from(this);
-        View getEmpIdView = li.inflate(R.layout.dialog_get_emp_id, null);
+        View getEmpIdView = li.inflate(R.layout.dialog_get_comp_id, null);
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         // set dialog_get_emp_id.xml to alertdialog builder
         alertDialogBuilder.setView(getEmpIdView);
 
-        final EditText userInput = (EditText) getEmpIdView.findViewById(R.id.editTextDialogUserInput);
+        final EditText userInput = (EditText) getEmpIdView.findViewById(R.id.editTextEnterComId);
 
         // set dialog message
         alertDialogBuilder
@@ -132,14 +132,16 @@ public class MainActivity extends AppCompatActivity {
                         // get user input and set it to result
                         // edit text
                         companiesOps = new CompanyOperations(MainActivity.this);
-                        companiesOps.removeEmployee(companiesOps.getEmployee(Long.parseLong(userInput.getText().toString())));
-                        Toast t = Toast.makeText(MainActivity.this,"Employee removed successfully!", Toast.LENGTH_SHORT);
+                        companiesOps.open();
+                        companiesOps.removeCompany(companiesOps.getCompanyById(Long.parseLong(userInput.getText().toString())));
+                        companiesOps.close();
+                        Toast t = Toast.makeText(MainActivity.this,"Empresa eliminada con éxito", Toast.LENGTH_SHORT);
                         t.show();
                     }
                 }).create()
                 .show();
 
-    }*/
+    }
 
     @Override
     protected void onResume() {
