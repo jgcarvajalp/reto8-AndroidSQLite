@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
         viewAllCompanyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             //   Intent i = new Intent(MainActivity.this, ViewAllEmployees.class);
-             //   startActivity(i);
+                Intent i = new Intent(MainActivity.this, ViewAllCompanies.class);
+               startActivity(i);
             }
         });
 
