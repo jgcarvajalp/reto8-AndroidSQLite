@@ -15,4 +15,5 @@
     <string name="company_classification">Clasificación</string>
     <string name="save_info">Guardar</string>
     <string name="companies_info">Empresas registradas</string>
+    <string name="companies_id">Id</string>
 </resources>

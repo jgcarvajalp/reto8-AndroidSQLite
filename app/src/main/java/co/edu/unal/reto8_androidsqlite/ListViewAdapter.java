@@ -29,6 +29,7 @@ public class ListViewAdapter extends BaseAdapter {
     }
 
     public class ViewHolder{
+        TextView id;
         TextView name;
         TextView url;
         TextView phone;
@@ -59,6 +60,7 @@ public class ListViewAdapter extends BaseAdapter {
             holder = new ViewHolder();
             view = inflater.inflate(R.layout.companies_search_filter, null);
             // Buscar los datos y presentarlos en el listview_item.xml
+            holder.id= (TextView) view.findViewById(R.id.filLayoutId);
             holder.name= (TextView) view.findViewById(R.id.filLayoutName);
             holder.url= (TextView) view.findViewById(R.id.filLayoutUrl);
             holder.phone= (TextView) view.findViewById(R.id.filLayoutPhone);
@@ -70,12 +72,13 @@ public class ListViewAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
         // Establecer resultados en el TextView
-        holder.name.setText(listasEmpresas.get(position).getName());
-        holder.url.setText(listasEmpresas.get(position).getUrl());
-        holder.phone.setText(listasEmpresas.get(position).getTelephone());
-        holder.email.setText(listasEmpresas.get(position).getEmail());
-        holder.products.setText(listasEmpresas.get(position).getProductsAndServices());
-        holder.classification.setText(listasEmpresas.get(position).getCompanyClassification());
+        holder.id.setText("Id: " + listasEmpresas.get(position).getId());
+        holder.name.setText("Nombre: " + listasEmpresas.get(position).getName());
+        holder.url.setText("URL: " + listasEmpresas.get(position).getUrl());
+        holder.phone.setText("Teléfono: " + listasEmpresas.get(position).getTelephone());
+        holder.email.setText("E-mail: " + listasEmpresas.get(position).getEmail());
+        holder.products.setText("Productos y servicios: " + listasEmpresas.get(position).getProductsAndServices());
+        holder.classification.setText("Clasificación: " + listasEmpresas.get(position).getCompanyClassification());
         return view;
     }
 
