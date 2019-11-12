@@ -5,13 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Filter;
+import android.widget.SearchView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import co.edu.unal.reto8_androidsqlite.db.CompanyOperations;
 import co.edu.unal.reto8_androidsqlite.model.Company;
 
-public class ViewAllCompanies extends ListActivity {
+public class ViewAllCompanies extends ListActivity{
 
     private CompanyOperations companyOps;
     List<Company> companies;

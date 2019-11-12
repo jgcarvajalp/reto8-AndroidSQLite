@@ -60,30 +60,14 @@ public class MainActivity extends AppCompatActivity {
         viewAllCompanyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, ViewAllCompanies.class);
+                Intent i = new Intent(MainActivity.this, ViewAllCompaniesFilter.class);
                startActivity(i);
             }
         });
 
     }
 
-/*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.employee_menu, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.menu_item_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-*/
     public void getEmpIdAndUpdateEmp(){
 
         LayoutInflater li = LayoutInflater.from(this);
@@ -111,7 +95,9 @@ public class MainActivity extends AppCompatActivity {
                 .show();
 
     }
-
+/*android:focusableInTouchMode="false"
+android:isScrollContainer="false"
+searchFilterName*/
 
     public void getEmpIdAndRemoveEmp(){
 

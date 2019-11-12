@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewAllCompanies"></activity>
+        <activity android:name=".ViewAllCompaniesFilter"></activity>
+        <activity android:name=".ViewAllCompanies" />
         <activity android:name=".AddUpdateEmployee" />
         <activity android:name=".MainActivity">
             <intent-filter>

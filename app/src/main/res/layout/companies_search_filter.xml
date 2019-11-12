@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchFilterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/filLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/company_name" />
+
+    <TextView
+        android:id="@+id/filLayoutUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/company_url" />
+
+    <TextView
+        android:id="@+id/filLayoutPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/company_phone" />
+
+    <TextView
+        android:id="@+id/filLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/company_email" />
+
+    <TextView
+        android:id="@+id/filLayoutProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/company_products" />
+
+    <TextView
+        android:id="@+id/filLayoutClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/company_classification" />
+
+</LinearLayout>
