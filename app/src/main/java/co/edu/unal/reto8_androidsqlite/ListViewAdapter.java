@@ -87,7 +87,7 @@ public class ListViewAdapter extends BaseAdapter {
             listasEmpresas.addAll(arrayList);
         } else {
             for (Company wp : arrayList) {
-                if (wp.getName().toLowerCase(Locale.getDefault()).contains(charText)) {
+                if (wp.getName().toLowerCase(Locale.getDefault()).contains(charText) || wp.getCompanyClassification().toLowerCase(Locale.getDefault()).contains(charText)) {
                     listasEmpresas.add(wp);
                 }
             }

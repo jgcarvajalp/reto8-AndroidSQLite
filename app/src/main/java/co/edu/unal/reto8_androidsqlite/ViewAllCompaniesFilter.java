@@ -37,6 +37,7 @@ public class ViewAllCompaniesFilter extends AppCompatActivity  implements Search
 
         editsearch = (SearchView) findViewById(R.id.searchView);
         editsearch.setOnQueryTextListener(this);
+        editsearch.setQueryHint("Escriba el nombre o clasificación");
     }
 
     @Override
